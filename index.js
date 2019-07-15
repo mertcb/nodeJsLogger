@@ -1,3 +1,3 @@
-var logger = require('./logger').add('avcitest.txt');
-logger.bilgi('Avci TEST WORKING');
-logger.hata('bu bi hata mesajidir')
+var logger = require('./logger').add('example.txt');
+logger.info('this is an info message');
+logger.error('this is an error message')
