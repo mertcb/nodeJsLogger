@@ -7,7 +7,7 @@ var createLogArray = function (logs) {
 };
 
 var Logger = function (logPath) {
-    this.write = system.print;
+    this.write = console.log;
     this.logLevel = 2;
     try {
         logPath = path.normalize(logPath);
@@ -17,7 +17,7 @@ var Logger = function (logPath) {
             this.stream.write(message);
         }
     } catch{
-        return 'dosya olusturulurken bir hata olustu'
+        console.log('dosya olusturulurken bir hata olustu')
     }
 }
 
@@ -54,7 +54,9 @@ Logger.prototype.log = function () {
                 message += ' ' + system.inspect(arguments, false, null);
             }
         });
-        message = this.format(Logger.levels[logIndex], new Date(), message);
+        var today = new Date();
+        var time = today.getHours(3) + ":" + today.getMinutes() + ":" + today.getSeconds()
+        message = this.format(Logger.levels[logIndex], time, message);
         this.write(message + "\n");
         return message;
     }
