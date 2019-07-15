@@ -29,10 +29,10 @@ var Logger = function (logPath) {
     }
 }
 
-Logger.levels = ['hata', 'uyari', 'bilgi'];
+Logger.levels = ['error', 'warn', 'info'];
 
-Logger.prototype.format = function (logCategory, logLevel, logDate, message) {
-    return [logCategory, logLevel, logDate, message].join(' ');
+Logger.prototype.format = function (logLevel, logDate, message) {
+    return [logLevel, logDate, message].join(' ');
 }
 
 Logger.prototype.setLevel = function (level) {
