@@ -1,4 +1,4 @@
 
-info 23:49:50   this is an info message
-error 23:49:50   this is an error message
-warn 23:49:50   this is an warn message
+info 5:29:14   this is an info message
+error 5:29:14   this is an error message
+warn 5:29:14   this is an warn message

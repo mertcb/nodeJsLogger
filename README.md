@@ -17,15 +17,13 @@ Firstly you need to import the logger
 **If you want to add a file**
 
 ```js
-var logger = require('./logger')
-logger.add('example.txt');
+var logger = require('./logger').createLog('example.txt');
 ````
 **If you want to log on console**
 
 ```js
-var logger = require('./logger')
-logger.add();
-````
+var logger = require('./logger').createLog();
+```
 
 Then you can log with this code below
 

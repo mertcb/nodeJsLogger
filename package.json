@@ -11,14 +11,9 @@
     "url": "git+https://github.com/mertcb/nodeJsLogger.git"
   },
   "author": "mertcb",
-  "license": "ISC",
+  "license": "GNU General Public License v3.0",
   "bugs": {
     "url": "https://github.com/mertcb/nodeJsLogger/issues"
   },
-  "homepage": "https://github.com/mertcb/nodeJsLogger#readme",
-  "dependencies": {
-    "fs": "0.0.1-security",
-    "path": "^0.12.7",
-    "sys": "0.0.1"
-  }
+  "homepage": "https://github.com/mertcb/nodeJsLogger#readme"
 }
