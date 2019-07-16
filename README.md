@@ -24,7 +24,6 @@ var logger = require('./logger').createLog('example.txt');
 ```js
 var logger = require('./logger').createLog();
 ```
-
 Then you can log with this code below
 
 ```js
